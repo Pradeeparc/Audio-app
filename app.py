@@ -13,7 +13,7 @@ Audio = stl.file_uploader("Upload file",type=["mp3","wav"])
 if Audio is not None:
     stl.audio(Audio)
 
-btn = stl.button("Upload")
+btn = stl.button("PREDICT")
 if btn == True:
     y=["air_conditioner", "car_horn", "children_playing", "dog_bark", "drilling", "enginge_idling", "gun_shot", "jackhammer", "siren","street_music"]
     from tensorflow.keras.utils import to_categorical
